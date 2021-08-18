@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Assignement2 {
+public class MyArrays {
 
 
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class Assignement2 {
         }
         int[] array1 = new int[array.length];
         System.arraycopy(array, 0, array1, 0, array.length);
-        Arrays.sort(array1);
+        java.util.Arrays.sort(array1);
         int d = array1[0];
         int d1 = -1;
         for (int j : array1) {
@@ -41,8 +41,8 @@ public class Assignement2 {
             d1 = 1;
             d = j;
         }
-        System.out.println("Sirul de elemente pozitive:" + Arrays.toString(positiveArray));
-        System.out.println("Sirul de elemente negative:" + Arrays.toString(negativeArray));
+        System.out.println("Sirul de elemente pozitive:" + java.util.Arrays.toString(positiveArray));
+        System.out.println("Sirul de elemente negative:" + java.util.Arrays.toString(negativeArray));
     }
 }
 
